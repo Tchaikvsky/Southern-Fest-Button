@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css" type="text/css" />
+    <title>Southern fest button</title>
+</head>
+
+<script>
+    function playRight() {
+      var audio = document.getElementById("audioRight");
+      audio.play();
+    }
+
+    function playNo() {
+      var audio = document.getElementById("audioNo");
+      audio.play();
+    }
+  </script>
+
+
+<body>
+    <audio id="audioRight" src="sounds/correct.m4a"></audio>
+    <img id="spin_button" src="img/green_spin.png" alt="Spin" onClick="playRight();" />
+
+    <audio id="audioNo" src="sounds/tryagain.m4a"></audio>
+    <img id="spin_button" src="img/spin_off.png" alt="Spin" onClick="playNo();" />
+
+</body>
+
+
+</html>
